@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        header,footer{
+            height: 100px;
+            width: 100%;
+            background-color: tomato;
+        }
+        .left{
+            height: 200px;
+            width: 20%;
+            background-color: yellow;
+            float: left;
+        }
+        .main{
+            height: 200px;
+            width: 60%;
+            float:left ;
+            background-color: greenyellow;
+        }
+        .right{
+            height: 200px;
+            width: 20%;
+            float: left;
+            background-color: rgb(26, 89, 126);
+        }
+        footer{
+            clear: both;
+        }
+         
+            
+        @media (max-width: 350px) {
+            .main{
+                float: none;
+                width: 100%;
+                
+            }
+            .left,.right{
+                float: none;
+                width: 100%;
+            }
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header> header </header>
+   
+    <div class="left"> left </div>
+    <main class="main"> main </main>
+     <div class="right"> right </div>
+     <footer> footer </footer>
+    
+</body>
+</html>
