@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            width: 25%;
+            height: 754px;
+            background-color: tomato;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 350px;
+        }
+
+        .box2{
+            width: 25%;
+            height: 754px;
+            background-color: orange;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 350px;
+        }
+
+        .box3{
+            width: 25%;
+            height: 754px;
+            background-color: yellow;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 350px;
+        }
+
+        .box4{
+            width: 25%;
+            height: 754px;
+            background-color: yellowgreen;
+            float: left;
+            font-size: 30px;
+            text-align: center;
+            padding-top: 350px;
+        }
+
+        @media (max-width: 900px) {
+            .box1, .box2, .box3, .box4{
+                width: 50%;
+                height: 333px;
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .box1, .box2, .box3, .box4{
+                width: 100%;
+                height: 167px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+</body>
+</html>

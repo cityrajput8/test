@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header,footer{
+            background-color: tomato;
+            padding: 20px;
+        }
+
+        .left,.right{
+            float: left;
+            width: 50%;
+            height: 400px;
+            background-color: yellowgreen;
+        }
+
+        footer{
+            clear: both;
+        }
+
+        @media (max-width:600px) {
+            .left,.right{
+                clear: both;
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>

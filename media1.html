@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        header{
+            width: 99.50%;
+            height: 50px;
+            background-color: aquamarine;
+            text-align: center;
+            border-radius: 5px;
+            margin: 4px;
+            margin-top: 1%;
+        }
+
+        main{
+            height: 670px;
+            width: 100%; 
+        }
+
+        .left{
+            width: 30%;
+            height: 100%;
+            background-color: aqua;
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        .right{
+            width: 68.50%;
+            height: 52%;
+            background-color: rgb(137, 216, 228);
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        .left, .right{
+            float: left;
+        }
+
+        .rightbox{
+            float: left;
+            width: 22.40%;
+            background-color: aquamarine;
+            height: 28%;
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        footer{
+            float: left;
+            background-color: rgb(37, 231, 160);
+            height: 17.50%;
+            width: 68.50%;
+            border-radius: 5px;
+            margin: 4px;
+        }
+
+        @media (max-width: 390px) {
+            .left{
+                width: 100%;
+                float: none;
+                height: 10%;
+            }
+
+            .right{
+                width: 100%;
+                float: none;
+                height: 40%;
+            }
+
+            .rightbox{
+                float: none;
+                width: 100%;
+            }
+
+            footer{
+                float: none;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 1142px) {
+            .left{
+                width: 100%;
+                float: none;
+                height: 10%;
+            }
+
+            .right{
+                width: 100%;
+                float: none;
+                height: 40%;
+            }
+
+            .rightbox{
+                float: none;
+                width: 100%;
+                height: 50px;
+            }
+
+            footer{
+                float: none;
+                width: 100%;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <main>
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+        <div class="rightbox">Box1</div>
+        <div class="rightbox">Box2</div>
+        <div class="rightbox">Box3</div>
+        <footer>
+            Footer
+        </footer>    
+    </main>
+</body>
+</html>
